@@ -1,0 +1,6 @@
+bot/__pycache__/handlers.cpython-312.pyc
+bot/__pycache__/main.cpython-312.pyc
+config/__pycache__/config.cpython-312.pyc
+transmission/__pycache__/client.cpython-312.pyc
+/venv
+config/.env
