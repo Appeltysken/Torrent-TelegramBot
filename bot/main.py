@@ -1,6 +1,6 @@
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters
 from config.config import TELEGRAM_BOT_TOKEN
-from bot.handlers import hello, get_torrents, button, upload_torrent_command, receive_torrent_file
+from bot.handlers import hello, get_torrents, button, upload_torrent_command, receive_torrent_file, help_command
 
 def main():
 
@@ -12,6 +12,7 @@ def main():
     app.add_handler(CommandHandler("upload_torrent", upload_torrent_command))
     app.add_handler(CommandHandler("upload_torrent", upload_torrent_command))
     app.add_handler(MessageHandler(filters.Document.ALL & filters.ChatType.PRIVATE, receive_torrent_file))
+    app.add_handler(CommandHandler("help", help_command))
 
     print("Bot is running...")
     app.run_polling()
