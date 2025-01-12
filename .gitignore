@@ -4,3 +4,5 @@ config/__pycache__/config.cpython-312.pyc
 transmission/__pycache__/client.cpython-312.pyc
 /venv
 config/.env
+config/__pycache__/__init__.cpython-312.pyc
+bot/__pycache__/__init__.cpython-312.pyc
