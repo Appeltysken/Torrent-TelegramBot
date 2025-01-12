@@ -30,9 +30,9 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     help_text = """
 Доступные команды:
 /help - Показать список доступных команд
-/hello - Приветствие
-/get_torrents - Показать доступные торренты
-/upload_torrent - Загрузить .torrent файл
+/hello - Получение ID
+/get_torrents - Управление .torrent-файлами
+/upload_torrent - Загрузить .torrent-файл
 """
     await update.message.reply_text(help_text)
 
