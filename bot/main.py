@@ -10,7 +10,6 @@ def main():
     app.add_handler(CommandHandler("get_torrents", get_torrents))
     app.add_handler(CallbackQueryHandler(button))
     app.add_handler(CommandHandler("upload_torrent", upload_torrent_command))
-    app.add_handler(CommandHandler("upload_torrent", upload_torrent_command))
     app.add_handler(MessageHandler(filters.Document.ALL & filters.ChatType.PRIVATE, receive_torrent_file))
     app.add_handler(CommandHandler("help", help_command))
 
